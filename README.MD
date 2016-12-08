@@ -1,5 +1,5 @@
-½µ¼¶ËµÃ÷:
-1. web.config È¥µô <webHttp helpEnabled="true" automaticFormatSelectionEnabled="true"/>
-2. svc ÎÄ¼şÌí¼Ó Factory="System.ServiceModel.Activation.WebServiceHostFactory"
+ï»¿é™çº§è¯´æ˜:
+1. web.config å»æ‰ <webHttp helpEnabled="true" automaticFormatSelectionEnabled="true"/>
+2. svc æ–‡ä»¶æ·»åŠ  Factory="System.ServiceModel.Activation.WebServiceHostFactory"
 
 
