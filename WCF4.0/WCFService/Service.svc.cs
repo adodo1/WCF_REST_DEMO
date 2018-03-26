@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Net;
 using System.Runtime.Serialization;
 using System.ServiceModel;
+using System.ServiceModel.Web;
 using System.Text;
 
 namespace WCFService
@@ -12,6 +14,14 @@ namespace WCFService
     {
         public string Say()
         {
+            // 获取客户端传过来的Header
+            WebHeaderCollection headerCollection = WebOperationContext.Current.IncomingRequest.Headers;
+            foreach (string item in headerCollection) {
+                string value = headerCollection.Get(item);
+            }
+            // 设置返回的Header
+            WebOperationContext.Current.OutgoingResponse.Headers["DODO"] = "hello";
+
             return "HelloWorld";
         }
 

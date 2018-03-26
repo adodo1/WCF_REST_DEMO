@@ -19,6 +19,8 @@ namespace WCFService
             foreach (string item in headerCollection) {
                 string value = headerCollection.Get(item);
             }
+            // 设置返回的Header
+            WebOperationContext.Current.OutgoingResponse.Headers["DODO"] = "hello";
             return "HelloWorld";
         }
 
